@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+/* ENCABEZADO */
+header{
+    width: 100%;
+
+}
+.navHeader{
+    background-color: #4a4a4a;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 80px;
+    border-top: 3px solid rgba(254, 202, 10, 1);
+}
+.navHeader ul{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.nav-ul li{
+    height: 100%;
+    padding: 15px 25px;
+    list-style: none;
+    line-height: 2.5;
+    text-transform: uppercase;
+    position: relative
+}
+.sublist{
+    width: 252px;
+    height: max-content;
+    position: absolute;
+    left:0;
+    top: 100%;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+}
+.sublist a{
+    display: block;
+    text-align: center;
+    color: #4a4a4a;
+}
+.sublist a:hover{
+    background-color:rgba(254, 202, 10, 1); 
+    color: black;
+}
+.navHeader ul li:hover{
+background-color: rgba(92, 92, 92, 1);
+color:rgba(255, 202, 5, 1);
+}
+#lista:hover ol{
+display: block;
+}
+
+/* PRINCIPAL HOME */
+
+#mainhome{
+    width: 100vw;
+    height: 1000px;
+    background-image: url("../image/home-background.png");
+    background-size: cover;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+#groupTextHome{
+    width: 30%;
+    margin: 10%;
+    height: 300px;
+}
+h3{
+    padding: 5px;
+    background-color: white;
+    width: max-content;
+    color: rgba(245, 130, 32, 1);
+    font-weight: 500;
+    
+}
+button{
+    margin: 5px;
+    padding: 8px;
+    color: black;
+    background-color: rgba(254, 202, 10, 1);
+    border: none;
+    border-radius: 4px;
+
+}
+/* PIE DE PAGINA */
+footer{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+.divLogoFooter{
+    width:  40%;
+}
+.logo-Footer{
+    width: 150px;
+    margin: 5px 25px;
+}
+.navFooter{
+    width: 60%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.navFooter ul li{
+    list-style: none;
+}
