@@ -14,7 +14,7 @@ header{
     width: 100%;
 
 }
-.navHeader{
+.nav__header{
     background-color: #4a4a4a;
     display:flex;
     flex-direction: row;
@@ -22,14 +22,14 @@ header{
     height: 80px;
     border-top: 3px solid rgba(254, 202, 10, 1);
 }
-.navHeader ul{
+.nav__header ul{
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
     display: flex;
     flex-direction: row;
 }
-.nav-ul li{
+.lista__nav-header li{
     height: 100%;
     padding: 15px 25px;
     list-style: none;
@@ -56,29 +56,30 @@ header{
     background-color:rgba(254, 202, 10, 1); 
     color: black;
 }
-.navHeader ul li:hover{
+.nav__header ul li:hover{
 background-color: rgba(92, 92, 92, 1);
 color:rgba(255, 202, 5, 1);
 }
-#lista:hover ol{
+#item__list:hover ol{
 display: block;
 }
 
 /* PRINCIPAL HOME */
 
-#mainhome{
+#main__home{
     width: 100vw;
-    height: 1000px;
+    height: 900px;
     background-image: url("../image/home-background.png");
     background-size: cover;
     display: flex;
     justify-content:start;
     align-items: center;
 }
-#groupTextHome{
+#grText__home{
     width: 30%;
     margin: 10%;
     height: 300px;
+    z-index: +1000;
 }
 h3{
     padding: 5px;
@@ -88,40 +89,81 @@ h3{
     font-weight: 500;
     
 }
-button{
-    margin: 5px;
-    padding: 8px;
-    color: black;
+h1{
+    margin: 15px 0;
+}
+.form__main{
+    margin-top:15px
+}
+.input__form-main{
+    padding: 5px;
+    margin: 3px;
+    z-index: 1000;
+}
+.btn{
     background-color: rgba(254, 202, 10, 1);
     border: none;
-    border-radius: 4px;
-
+    color: black;
+    padding: 8px;
+    border-radius:4px;
+    font-weight: 500;
 }
-/* PIE DE PAGINA */
-footer{
-    background-color: #4a4a4a;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
-}
-
-.divLogoFooter{
-    width:  40%;
-}
-.logo-Footer{
-    width: 150px;
-    margin: 5px 25px;
-}
-.navFooter{
+.inp{
     width: 60%;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
-.navFooter ul li{
+
+/* PIE DE PAGINA */
+
+footer{
+    width: 100vw;
+    height: 300px;
+    position: relative;
+
+
+}
+.contenedor__footer{
+width: 100%;
+height: 305%;
+background-image: url("../image/ff.svg");
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+bottom: 0;
+left: 0;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+
+}
+.logo__footer{
+width: 40% ;
+height: max-content;
+padding: 25px;
+margin-bottom: 5%;
+}
+.nav__footer{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 60%;
+height: max-content;
+margin-bottom: 5%;
+
+}
+.lista__nav-footer{
+height: 25%;
+width: max-content;
+font-weight: 600;
+}
+.lista__nav-footer li{
+    font-weight: 300;
+    margin: 5px;
+    padding: 5px;
     list-style: none;
+}
+.redes__nav-footer{
+    margin: 5px;
+}
+.a__lista-footer:hover{
+    color: rgba(255, 202, 5, 1);
 }

@@ -16,10 +16,10 @@
 <body>
     <header class="header">
         <div><a href="index.html"><img src="src/image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
-        <nav class="navHeader">
-            <ul class="nav-ul">
+        <nav class="nav__header">
+            <ul class="lista__nav-header">
                 <li>Quienes somos</li>
-                <li id="lista">Nuestros Programas 
+                <li id="item__list">Nuestros Programas 
                     <ol class="sublist">
                         <a href="">ECAF</a>
                         <a href="">FUERZA JOVEN</a>
@@ -30,65 +30,67 @@
             </ul>
         </nav>
     </header>
-    <main id="mainhome">
-    <div id="groupTextHome">
-        <h3 id="h3Home">Formá parte del cambio</h3>
-        <h1 id="h1Home">SUMA TU FUERZA</h1>
-        <P id="parrafHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate obcaecati fugiat maxime doloribus possimus? Temporibus velit amet blanditiis laboriosam et dignissimos neque molestiae est eligendi similique. Odit dolorum alias aut.</P>
-        <form action="POST">
-            <input type="text">
-            <input type="submit">
+    <main id="main__home">
+    <div id="grText__home">
+        <h3 id="h3__grText-home">Formá parte del cambio</h3>
+        <h1 id="h1__grText-home">SUMA TU FUERZA</h1>
+        <P id="parraf__grText-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate obcaecati fugiat maxime doloribus possimus? Temporibus velit amet blanditiis laboriosam et dignissimos neque molestiae est eligendi similique. Odit dolorum alias aut.</P>
+        <form action="POST" class="form__main">
+            <input type="email" name="email" id="email__form-main" class="input__form-main" placeholder="Ingrese su E-mail">
+            <button type="submit" class="input__form-main btn"> <span></span>Quiero ser parte</button>
+
         </form>
     </div>
 
     </main>
     <footer class="footer" >
-        
-        <div class="divLogoFooter">
-            <a href="index.html"><img src="src/image/logo-white.svg" alt="logo Ong Fuerza Activa" class="logo-Footer"></a>
-        </div>
-        <nav class="navFooter">
-            <ul> Suma tu Fuerza</ul>
-            <ul>
-                <li>
-                    Quienes somos
-                </li>
-                <li> mision,vision,credo
-                    <a href=""></a>
-                </li>
-            </ul>
-            <ul>
-                <li>Nuestros Programas</li>
-                                <li>
-                    <a href="">ECAF</a>
-                </li>
-                <li>
-                    <a href="">Fuerza Joven</a>
-                </li>
-                <li>
-                    <a href="">Capacitaciones</a>
-                </li>
-            </ul>
-            <ul>
-                <li>Contactanos</li>
-                <li>
-                    <a href="">Donde Estamos</a>
-                </li>
-                <li>
-                    Mail xxxxx
-                </li>
-                <li>
-                    Tel 11111111
-                </li>
-                <a href="">
-                    <img src="src/image/face.png" alt="">
-                </a>
-                <a href="">
-                    <img src="src/image/insta.png" alt="">
-                </a>
+        <div class="contenedor__footer">
+                <div class="logo__footer">
+                    <a href="index.html"><img src="src/image/logo-white.svg" alt="logo Ong Fuerza Activa" class="logo-Footer"></a>
+                </div>
+                <nav class="nav__footer">
+                    <ul class="lista__nav-footer"> <a href="#h1Home">Suma tu Fuerza</a>
 
-            </ul>
-        </nav>
+                    </ul>
+                    <ul class="lista__nav-footer">Quienes somos
+                        
+                        <li> 
+                            <a href="" class="a__lista-footer">mision,vision,credo</a>
+                        </li>
+                    </ul>
+                    <ul class="lista__nav-footer">Nuestros Programas
+                        
+                        <li>
+                            <a href="">ECAF</a>
+                        </li>
+                        <li>
+                            <a href="" class="a__lista-footer">Fuerza Joven</a>
+                        </li>
+                        <li>
+                            <a href="">Capacitaciones</a>
+                        </li>
+                    </ul>
+                    <ul class="lista__nav-footer">Contactanos
+                        <li>
+                            <a href="" class="a__lista-footer">Donde Estamos</a>
+                        </li>
+                        <li>
+                            Mail xxxxx
+                        </li>
+                        <li>
+                            Tel 11111111
+                        </li>
+                        <a href=""  class="redes__nav-footer">
+                            <img src="src/image/face.png" alt="">
+                        </a>
+                        <a href="" class="redes__nav-footer">
+                            <img src="src/image/insta.png" alt="">
+                        </a>
+
+                    </ul>
+                </nav>
+        </div>
+        
     </footer>
 
 
