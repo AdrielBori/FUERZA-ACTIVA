@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    
     font-family: 'Montserrat', sans-serif;
 }
+
 a{
     text-decoration: none;
     color:white;
@@ -130,12 +132,10 @@ h1{font-size: 44px;
 
 /* PIE DE PAGINA */
 
-footer{
+.footer{
     width: 100vw;
     height: 300px;
     position: relative;
-
-
 }
 .contenedor__footer{
 width: 100%;
@@ -152,9 +152,9 @@ align-items: flex-end;
 
 }
 .logo__footer{
-width: 40% ;
+width: 35% ;
 height: max-content;
-padding: 25px;
+padding: 20px;
 margin-bottom: 5%;
 }
 .logo-Footer{
