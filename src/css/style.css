@@ -167,3 +167,23 @@ font-weight: 600;
 .a__lista-footer:hover{
     color: rgba(255, 202, 5, 1);
 }
+
+
+/*Quiénes somos*/
+.qs-img {
+    max-width: 1200px;
+}
+.qs-title {
+    color: #f58220;
+}
+.qs-txt {
+    color: #4a4a4a;
+}
+.hands-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.rectangle {
+    border-radius: 10px;
+    background-color: #f58220;
+}
