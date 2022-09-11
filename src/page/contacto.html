@@ -34,13 +34,13 @@
         </header>
     <main class="main__contacto">
     <div class="div__contacto">
-        <form action="POST" >
+        <form action="send.php" method="post" >
             <label for="nombre" class="label__form">NOMBRE</label>
-            <input type="text" id="nombre"  class="item__form-contacto">
+            <input type="text" id="nombre" name="name"  class="item__form-contacto">
             <label for="email" class="label__form">email</label>
-            <input type="email" id="email"  class="item__form-contacto">
-            <label for="mensaje" class="label__form">mensaje</label>
-            <textarea name="" id="mensaje" cols="30" rows="10" class="item__form-contacto">
+            <input type="email" id="email" name="mail"  class="item__form-contacto">
+            <label for="mensaje" class="label__form" >mensaje</label>
+            <textarea name="messaje" id="mensaje" cols="30" rows="10" class="item__form-contacto">
 
             </textarea>
             <input type="submit" class="submit" value="Eviar">

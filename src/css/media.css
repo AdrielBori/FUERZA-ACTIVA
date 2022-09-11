@@ -1,0 +1,15 @@
+/* MEDIA PAGINA HOME */
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+    
+    #grText__home{
+        width: 53%;
+    }
+
+    .lista__nav-header a{
+        font-size: 12px;
+
+    }
+    #main__home{
+        background-position:-150px;
+}
+}
