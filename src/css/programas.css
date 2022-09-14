@@ -1,8 +1,6 @@
 *{
     color:black;
 }
-
-
 .main__progrmas{
     width: 100vw;
     height: max-content;
@@ -25,33 +23,6 @@
     left: 0;
     top: 0;
 }
-.ecaf__programas{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.ecaf{
-    width: 80%;
-    height:max-content;
-    border: 1px solid gray;
-    border-radius: 5px;
-    color: black;
-    margin-top: 5%;
-}
-.titulo__ecaf{
-    color:black;
-}
-.ecaf p {
-    color:black;
-}
-
-.ecaf ul li{
-    color: black;
-}
-
 .capacitaciones__programas{
     width: 100%;
     height: 400px;
@@ -88,3 +59,50 @@
     bottom: 0;
     
 }
+
+/* ECAF */
+.sec__ecaf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .art__ecaf{
+        width: 80%;
+        height: max-content;
+        border: 1px solid white;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+        .titulo__ecaf{
+            color: rgba(237, 101, 2, 1);
+            align-self: flex-start;
+            margin: 20px 10px ;
+        }
+        .p__art-ecaf{
+            width: 80%;
+            height: max-content;
+            margin: 5px;
+            line-height: 1.5;
+            text-justify: auto;
+            text-align: justify;
+        }
+            .p__art-ecaf span{
+            color: rgba(237, 101, 2, 1);
+            font-weight: bold;
+            }
+
+    .ul__art-ecaf{
+        margin: 20px 10px ;
+        width: 80%;
+        height: max-content;
+    }
+        .ul__art-ecaf li{
+            margin: 3px 10px ;
+            color: rgba(237, 101, 2, 1);
+        }
+
