@@ -1,3 +1,8 @@
+*{
+    color:black;
+}
+
+
 .main__progrmas{
     width: 100vw;
     height: max-content;
@@ -41,4 +46,22 @@
 }
 .ecaf p {
     color:black;
+}
+
+.ecaf ul li{
+    color: black;
+}
+
+.capacitaciones__programas{
+    width: 100%;
+    height: 400px;
+}
+.carusel__capacitaciones-programas{
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+}
+.fuerzaJoven__progrmas{
+    width: 100%;
+    height: 500px;
 }
