@@ -26,6 +26,7 @@
     font-size: 21px;
     line-height: 1.5em;
     font-weight: 510;
+    margin-bottom: 80px;
 }
 .hands-img {
     max-width: 200px;
@@ -34,4 +35,22 @@
 .rectangle {
     border-radius: 10px;
     background-color: #f58220;
+}
+.vector-gris {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.vector-naranja {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.qs-title-2-container {
+    display: flex;
+    align-items: center;
+}
+.qs-title-2 {
+    color: white;
+    z-index: 2;
 }
