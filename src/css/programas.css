@@ -1,11 +1,23 @@
 *{
     color:black;
+    
 }
 .main__progrmas{
     width: 100vw;
     height: max-content;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+#heading__prog{
+    width: 350px;
+    height: 110px;
+    font-size: 55px;
+    font-weight:900;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 .img__programas{
     background-image: url("../image/imgProgramas.png");
@@ -14,6 +26,9 @@
     width: 100%;
     height: 500px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .filter{
     width: 100%;
@@ -25,7 +40,7 @@
 }
 .capacitaciones__programas{
     width: 100%;
-    height: 400px;
+    height: max-content;
     position: relative;
     z-index: 1;
 }
@@ -76,6 +91,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 1000;
+        background-color: white;
         
     }
         .titulo__ecaf{
@@ -100,9 +117,112 @@
         margin: 20px 10px ;
         width: 80%;
         height: max-content;
+        border-radius: 10px;
+        
+        box-shadow: 0 0 10px rgba(134, 134, 134, 0.075);
     }
         .ul__art-ecaf li{
             margin: 3px 10px ;
             color: rgba(237, 101, 2, 1);
         }
 
+/* CAPACITACIONES */
+.capacitaciones__programas{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.carrousel__programas{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin:  50px 0;
+}
+.icon__flecha{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: rgba(237, 100, 2, 0.5) ; 
+    cursor:pointer;
+}
+.icon__flecha:hover{
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
+    background-color:rgba(244, 129, 32, 1);
+}
+
+.icon__flecha img{
+    width: 100%;
+}
+.card{
+    width: 200px;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    background-color: white;
+    }
+.img__card{
+    width: 100%;
+}
+.text__card{
+    width: 100%;
+}
+#izq{
+    left: 0;
+}
+#der{
+    right: 0;
+}
+#content__cards{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: ease-in-out 0.65s;
+    
+    
+}
+.filtro__prog{
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    background-image: url("../image/secProgrmas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -100;
+    left: 0;
+    bottom: 0;
+}
+.titulo__capacitaciones{
+    width: 80%;
+    margin: auto;
+    padding:25px 0  ;
+    color: white;
+    font-weight: bolder;
+    font-size: 55px;
+}
+.p__capacitaciones{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: white;
+}
+
+/* FUERZA JOVEN */
+.fuerzaJoven{
+    width: 100%;
+    height: 600px;
+}
