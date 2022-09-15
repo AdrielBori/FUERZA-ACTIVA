@@ -222,7 +222,80 @@
 }
 
 /* FUERZA JOVEN */
-.fuerzaJoven{
+#fuerzaJoven{
     width: 100%;
-    height: 600px;
+    height: 790px;
+    margin-bottom: 15px;
+}
+.card{
+    width: 200px;
+    height: max-content;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    background-color: white;
+    }
+.card__img{
+    width: 100%;
+}
+.card__text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content__cards{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: ease-in-out 0.65s;
+}
+.programas__fuerzaJoven{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+.fuerzaJoven__contenedorCard{
+    width: 60%;
+    min-width: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+.cardFA{
+    width:48%;
+    min-width: 290px;
+    border: none;
+    
+}
+.card__img--FA{
+    height: 30%;
+    box-shadow: 5px 5px 5px rgb(240, 240, 240);
+}
+.card__titulo{
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    color: rgba(244, 129, 32, 1);
+    margin:10px 0 ;
+}
+.fuerzaJoven__titulo{
+    width: 60%;
+    color: rgba(244, 129, 32, 1);
+    margin:10px 0 ;
+}
+.fuerzaJoven__p{
+    width: 60%;
+    
+}
+.card__p--FA{
+    width: 80%;
+    margin-bottom: 15px;
 }
