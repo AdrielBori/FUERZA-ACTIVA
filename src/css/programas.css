@@ -97,6 +97,8 @@
     }
         .titulo__ecaf{
             color: rgba(237, 101, 2, 1);
+            font-size: 5.5rem;
+            font-weight:900;
             align-self: flex-start;
             margin: 20px 10px ;
         }
@@ -104,7 +106,8 @@
             width: 80%;
             height: max-content;
             margin: 5px;
-            line-height: 1.5;
+            font-weight: 500;
+            font-size: 2.6rem;
             text-justify: auto;
             text-align: justify;
         }
@@ -123,6 +126,9 @@
     }
         .ul__art-ecaf li{
             margin: 3px 10px ;
+            font-size: 2.8rem;
+            font-weight: 500;
+            
             color: rgba(237, 101, 2, 1);
         }
 
@@ -138,7 +144,7 @@
 .carrousel__programas{
     position: relative;
     width: 100%;
-    height: 260px;
+    height:600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +170,7 @@
     width: 100%;
 }
 .card{
-    width: 200px;
+    width: 40rem;
     height: max-content;
     border: 1px solid black;
     border-radius: 10px;
@@ -179,6 +185,15 @@
 .text__card{
     width: 100%;
 }
+.p__card{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.titulo__card{
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 #izq{
     left: 0;
 }
@@ -187,12 +202,16 @@
 }
 #content__cards{
     display: flex;
+    height: max-content;
     position: absolute;
     left: 0;
     top: 0;
     transition: ease-in-out 0.65s;
     
     
+}
+.capacitaciones__div{
+    height: max-content;
 }
 .filtro__prog{
     width: 100%;
@@ -216,6 +235,8 @@
 .p__capacitaciones{
     width: 80%;
     margin: auto;
+    font-size: 2.6rem;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: justify;
     color: white;
@@ -224,19 +245,9 @@
 /* FUERZA JOVEN */
 #fuerzaJoven{
     width: 100%;
-    height: 790px;
+    height: 1200px;
     margin-bottom: 15px;
 }
-.card{
-    width: 200px;
-    height: max-content;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    margin: 15px;
-    flex-direction: column;
-    background-color: white;
-    }
 .card__img{
     width: 100%;
 }
@@ -250,6 +261,7 @@
 
 #content__cards{
     display: flex;
+    height: max-content;
     position: absolute;
     left: 0;
     top: 0;
@@ -288,14 +300,24 @@
 }
 .fuerzaJoven__titulo{
     width: 60%;
+    font-size: 5.5rem;
+    font-weight: bold;
     color: rgba(244, 129, 32, 1);
     margin:10px 0 ;
 }
 .fuerzaJoven__p{
     width: 60%;
+    font-size: 2.8rem;
+    font-weight: 500;
     
 }
 .card__p--FA{
     width: 80%;
+    font-size: 2.2rem;
+    font-weight: 500;
     margin-bottom: 15px;
+}
+.card__titulo--FA{
+    font-size: 3.2rem;
+    font-weight: bold;
 }
