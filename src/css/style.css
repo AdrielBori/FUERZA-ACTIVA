@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    
     font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 10px;
 }
 
 a{
@@ -19,35 +21,44 @@ header{
 .div__logo-header{
 
 width: 100%;
-height: 100px;
+height: max-content
 
 }
 #logo{
-    width:150px ;
+    width: 25rem;
     margin: 20px;
+    margin-left: 11.5rem;
+    
+    
+
 }
-.nav__header{
+.header__nav{
     background-color: #4a4a4a;
     display:flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:flex-start;
     height: 80px;
     border-top: 3px solid rgba(254, 202, 10, 1);
 }
-.nav__header ul{
-    justify-content: space-evenly;
+.header__nav ul{
+    margin-left: 11.5rem ;
     align-items: center;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-direction: row;
 }
-.lista__nav-header li{
+.nav__list li{
     height: 100%;
     padding: 15px 25px;
     list-style: none;
     line-height: 2.5;
     text-transform: uppercase;
     position: relative
+}
+.nav__a{
+    width: max-content;
+    font-size: 1.8rem;
+    font-weight:500;
 }
 .sublist{
     width: 252px;
@@ -60,6 +71,8 @@ height: 100px;
     flex-direction: column;
 }
 .sublist a{
+    font-size: 1.8rem;
+    font-weight: 500;
     display: block;
     text-align: center;
     color: #4a4a4a;
@@ -78,7 +91,7 @@ display: block;
 
 /* PRINCIPAL HOME */
 
-#main__home{
+#home__main{
     width: 100vw;
     height: 900px;
     background-image: url("../image/home-background.png");
@@ -87,30 +100,28 @@ display: block;
     justify-content:start;
     align-items: center;
 }
-#grText__home{
+#home__grText{
     width: 40%;
     margin: 10%;
     height: 300px;
     z-index: +1000;
 }
-h3{
-   
-    font-size: 44px;
+#grText__h3{
+    font-size: 5.5rem;
     width: max-content;
     text-transform: uppercase;
     font-weight: bold;
     color: #4a4a4a;
-    
 }
-h1{font-size: 44px;
+#grText__h1{font-size:5.5rem;
      width: max-content;
     font-weight: bold;
 }
-#parraf__grText-home{
+#grText__parraf{
     font-size: 22px;
     font-weight: 300;
 }
-.form__main{
+.main__form{
     margin-top:15px
 }
 .input__form-main{
@@ -139,7 +150,7 @@ h1{font-size: 44px;
 }
 .contenedor__footer{
 width: 100%;
-height: 120%;
+height: 130%;
 background-image: url("../image/ff.svg");
 background-repeat: no-repeat;
 background-size: cover;
@@ -155,10 +166,12 @@ align-items: flex-end;
 width: 35% ;
 height: max-content;
 padding: 20px;
+
 margin-bottom: 5%;
 }
 .logo-Footer{
-    width: 150px;
+    width: 25rem;
+    margin-left: 11.5rem;
 }
 .nav__footer{
 display: flex;
@@ -172,7 +185,9 @@ margin-bottom: 5%;
 .lista__nav-footer{
 height: 25%;
 width: max-content;
-font-weight: 600;
+font-size: 1.8rem;
+font-weight: 400;
+
 }
 .lista__nav-footer li{
     font-weight: 300;
@@ -182,6 +197,10 @@ font-weight: 600;
 }
 .redes__nav-footer{
     margin: 5px;
+}
+.a__lista-footer{
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 .a__lista-footer:hover{
     color: rgba(255, 202, 5, 1);

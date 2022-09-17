@@ -1,4 +1,20 @@
 /* MEDIA PAGINA HOME */
+@media (max-width:1600px){
+    html{
+        font-size: 9px;
+    }
+    @media (max-width:1465px){
+        html{
+            font-size: 6;
+        }
+        .nav_header ul{
+            width: 55%;
+        }
+    }
+}
+
+
+
 @media only screen and (min-width: 800px) and (max-width: 1100px) {
     
     #grText__home{
