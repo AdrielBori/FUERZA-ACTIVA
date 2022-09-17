@@ -60,6 +60,9 @@ height: max-content
     font-size: 1.8rem;
     font-weight:500;
 }
+.nav__a:hover{
+    color:rgba(255, 202, 5, 1);
+}
 .sublist{
     width: 252px;
     height: max-content;
@@ -81,12 +84,13 @@ height: max-content
     background-color:rgba(254, 202, 10, 1); 
     color: black;
 }
-.nav__header ul li:hover{
+.nav__list li:hover{
 background-color: rgba(92, 92, 92, 1);
 color:rgba(255, 202, 5, 1);
 }
 #item__list:hover ol{
 display: block;
+width: 100%;
 }
 
 /* PRINCIPAL HOME */
@@ -101,7 +105,7 @@ display: block;
     align-items: center;
 }
 #home__grText{
-    width: 40%;
+    width: 35%;
     margin: 10%;
     height: 300px;
     z-index: +1000;
@@ -114,7 +118,7 @@ display: block;
     color: #4a4a4a;
 }
 #grText__h1{font-size:5.5rem;
-     width: max-content;
+    width: max-content;
     font-weight: bold;
 }
 #grText__parraf{
@@ -122,22 +126,27 @@ display: block;
     font-weight: 300;
 }
 .main__form{
-    margin-top:15px
+    margin-top:15px;
+    
+    
 }
-.input__form-main{
-    padding: 5px;
-    margin: 3px;
+.form__input{
+    padding: 1rem;
+    margin: 0.7rem;
     z-index: 1000;
+    
 }
 .btn{
     background-color: rgba(254, 202, 10, 1);
     border: none;
     color: black;
-    padding: 8px;
+    font-size: 1.6rem;
     border-radius:4px;
-    font-weight: 500;
+    font-weight: 600;
+    width: 30%;
+    
 }
-.inp{
+.email{
     width: 60%;
 }
 

@@ -16,31 +16,31 @@
     </head>
     <body>
         <header class="header">
-            <div class="div__logo-header"><a href="index.html"><img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
-            <nav class="nav__header">
-                <ul class="lista__nav-header">
-                    <li> <a href="../../index.html">Inicio</a> </li>
-                    <li> <a href="quienessomos.html">Quienes somos</a> </li>
-                    <li id="item__list">Nuestros Programas 
+            <div class="div__logo-header"><a href="../../index.html"><img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li> <a href="../../index.html" class="nav__a">Inicio</a> </li>
+                    <li> <a href="../page/quienessomos.html" class="nav__a">Quienes somos</a> </li>
+                    <li id="item__list"> <a href="" class="nav__a">Nuestros Programas </a> 
                         <ol class="sublist">
-                            <a href="">ECAF</a>
-                            <a href="">FUERZA JOVEN</a>
-                            <a href="">CAPACITACIONES</a>
+                            <a href="../page/programas.html#ecaf">ECAF</a>
+                            <a href="../page/programas.html#capacitaciones">FUERZA JOVEN</a>
+                            <a href="../page/programas.html#fuerzaJoven">CAPACITACIONES</a>
                         </ol>
                     </li>
-                    <li> <a href="contacto.html">Contactanos</a> </li>
+                    <li> <a href="../page/contacto.html" class="nav__a">Contactanos</a> </li>
                 </ul>
             </nav>
         </header>
     <main class="main__contacto">
     <div class="div__contacto">
-        <form action="../send.php" method="POST" >
+        <form action="" method="POST" >
             <label for="nombre" class="label__form">NOMBRE</label>
-            <input type="text" id="nombre" name="name"  class="item__form-contacto">
+            <input type="text" id="nombre" name="name"  class="form__item-contacto">
             <label for="email" class="label__form">email</label>
-            <input type="email" id="email" name="mail"  class="item__form-contacto">
+            <input type="email" id="email" name="mail"  class="form__item-contacto">
             <label for="mensaje" class="label__form" >mensaje</label>
-            <textarea name="messaje" id="mensaje" cols="30" rows="10" class="item__form-contacto">
+            <textarea name="messaje" id="mensaje" cols="30" rows="10" class="form__item-contacto">
 
             </textarea>
             <input type="submit" class="submit" value="Eviar">
@@ -65,24 +65,21 @@
                 </div>
                 <nav class="nav__footer">
                     <ul class="lista__nav-footer"> <a href="#h1Home">Suma tu Fuerza</a>
-
                     </ul>
                     <ul class="lista__nav-footer">Quienes somos
-                        
                         <li> 
                             <a href="" class="a__lista-footer">mision,vision,credo</a>
                         </li>
                     </ul>
                     <ul class="lista__nav-footer">Nuestros Programas
-                        
                         <li>
-                            <a href="">ECAF</a>
+                            <a href="./programas.html#ecaf" class="a__lista-footer">ECAF</a>
                         </li>
                         <li>
-                            <a href="" class="a__lista-footer">Fuerza Joven</a>
+                            <a href="./programas.html#fuerzaJoven" class="a__lista-footer">Fuerza Joven</a>
                         </li>
                         <li>
-                            <a href="">Capacitaciones</a>
+                            <a href="./programas.html#capacitaciones" class="a__lista-footer">Capacitaciones</a>
                         </li>
                     </ul>
                     <ul class="lista__nav-footer">Contactanos
