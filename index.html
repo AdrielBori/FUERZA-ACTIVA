@@ -16,8 +16,16 @@
 </head>
 <body>
     <header class="header">
-        <div class="div__logo-header"><a href="index.html"><img src="src/image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
-        <nav class="header__nav">
+        <div class="div__logo-header">
+            <a href="index.html">
+                <img src="src/image/logo.svg" alt="logo Ong Fuerza Activa" id="logo">
+            </a> 
+            <div class="icons__menu">
+                <img src="src/image/menuburger.svg" alt="" id="burger__menu">
+                <img src="src/image/close_icon.svg" alt="" id="close__menu">
+            </div>
+        </div>
+        <nav class="header__nav" id="slide__menu">
             <ul class="nav__list">
                 <li> <a href="index.html" class="nav__a">Inicio</a> </li>
                 <li> <a href="src/page/quienessomos.html" class="nav__a">Quienes somos</a> </li>
@@ -33,6 +41,7 @@
         </nav>
     </header>
     <main id="home__main">
+        <div class="elipce"></div>
     <div id="home__grText">
         <h3 id="grText__h3">Sé parte del cambio</h3>
         <h1 id="grText__h1">SUMA TU FUERZA</h1>
@@ -87,5 +96,6 @@
                 </nav>
         </div>
     </footer>
+    <script src="src/script/index.js"></script>
 </body>
 </html>

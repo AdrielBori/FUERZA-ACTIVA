@@ -3,9 +3,10 @@
     html{
         font-size: 9px;
     }
+    
     @media (max-width:1465px){
         html{
-            font-size: 6;
+            font-size: 8px;
         }
         .nav_header ul{
             width: 55%;
@@ -15,7 +16,7 @@
 
 
 
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media (max-width: 1250px) {
     
     #grText__home{
         width: 53%;
@@ -25,7 +26,90 @@
         font-size: 12px;
 
     }
-    #main__home{
+    #home__main{
         background-position:-150px;
+}
+.main__form{
+    flex-direction: column;
+    height: max-content;
+    align-items: flex-start;
+}
+.contenedor__footer{
+    justify-content: space-between;
+}
+    html{
+            font-size: 7px;
+        }
+        @media (max-width:1000px){
+            #home__main{
+                background-position:-250px;
+        }
+        @media (max-width:800px){
+            #burger__menu{
+                display: block;
+            }          
+            .header__nav{
+                display: none;
+            }  
+            .header__nav ul{
+                margin-left: 0;
+            }
+            .logo__footer{
+                display: none;
+            }
+            .contenedor__footer{
+                justify-content: center;
+            }
+            #home__grText{
+                width: 70%;
+            }
+            .nav__footer{
+                width: 80%;
+            }
+            @media (max-width:500px){
+                #home__main{
+                    background-position:-600px -30px;
+            }
+            @media  (min-width:100px) and (max-width:499px){
+                html{
+                    font-size: 5.5px;
+                }
+                .nav__footer{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 50% 50%;
+                    gap: 15px;
+                }
+                .header__nav{
+                    position: absolute;
+                    top: 93.7px;
+                    height: 150vh;
+                    left: 0;
+                    z-index: 15000
+                    ;
+                }
+                .nav__list{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                }
+                .nav__list li{
+                    margin-bottom:80px ;
+                    width: 100%;
+                }
+                #close__menu{
+                    z-index: 16000;
+                }
+                #grText__h3{
+                    width: 90%;
+                    height: max-content;
+                }
+                #logo{
+                    margin-left: 5.5rem;
+                }
+            }
+        }
+        }
+    
 }
 }
