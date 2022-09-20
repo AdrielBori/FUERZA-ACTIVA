@@ -5,26 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/media.css">
     <link rel="stylesheet" href="../css/programas.css">
+    <link rel="stylesheet" href="../css/media.css">
     
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="div__logo-header"><a href="../../index.html"><img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
-        <nav class="header__nav">
+        <div class="div__logo-header">
+            <a href="index.html">
+                <img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo">
+            </a> 
+            <div class="icons__menu">
+                <img src="../image/menuburger.svg" alt="" id="burger__menu">
+                <img src="../image/close_icon.svg" alt="" id="close__menu">
+            </div>
+        </div>
+        <nav class="header__nav" id="slide__menu">
             <ul class="nav__list">
-                <li> <a href="../../index.html" class="nav__a">Inicio</a> </li>
+                <li> <a href="index.html" class="nav__a">Inicio</a> </li>
                 <li> <a href="../page/quienessomos.html" class="nav__a">Quienes somos</a> </li>
-                <li id="item__list"> <a href="" class="nav__a">Nuestros Programas </a> 
+                <li id="item__list"> <a href="../page/programas.html" class="nav__a">Nuestros Programas </a> 
                     <ol class="sublist">
                         <a href="../page/programas.html#ecaf">ECAF</a>
                         <a href="../page/programas.html#capacitaciones">FUERZA JOVEN</a>
                         <a href="../page/programas.html#fuerzaJoven">CAPACITACIONES</a>
                     </ol>
                 </li>
-                <li> <a href="../page/contacto.html" class="nav__a">Contactanos</a> </li>
+                <li> <a href="../page/contacto.html" class="nav__a">Contacto</a> </li>
             </ul>
         </nav>
     </header>
@@ -35,7 +43,7 @@
             <h1 id="heading__prog">NUESTROS PROGRAMAS</h1>
         </section>
         <section class="sec__ecaf" id="ecaf">
-            <article class="art__ecaf">
+            <article class="art__ecaf" id="artEcaf">
                 <h2 class="titulo__ecaf">ECAF</h2>
                 <p class="p__art-ecaf">
                     <span>¿Qué son los ECAF?</span> 

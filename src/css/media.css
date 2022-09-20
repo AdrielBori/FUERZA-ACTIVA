@@ -67,9 +67,16 @@
             padding-bottom: 80px;
         }
         @media (max-width:800px){
+            .div__logo-header{
+                border-bottom: 3px solid #feca0a;
+            }
             #burger__menu{
                 display: block;
+                width: 30px;
             }          
+            #close__menu{
+                width: 30px;
+            }
             .header__nav{
                 display: none;
             }  
@@ -88,13 +95,20 @@
             .nav__footer{
                 width: 80%;
             }
-            @media (max-width:500px){
+            @media (max-width:600px){
                 #home__main{
                     background-position:-600px -30px;
             }
-            @media  (min-width:100px) and (max-width:499px){
+            @media  (min-width:100px) and (max-width:600px){
                 html{
-                    font-size: 5.5px;
+                    font-size: 7px;
+                }
+                #artEcaf{
+                    width: 100%;
+                    margin:0px 0px;
+                }
+                .container__slider{
+                    height: 400px;
                 }
                 .nav__footer{
                     display: grid;
@@ -127,12 +141,33 @@
                 #close__menu{
                     z-index: 16000;
                 }
-                #grText__h3{
-                    width: 90%;
-                    height: max-content;
+                #home__grText{
+                    margin-left:15px;
+                    
                 }
                 #logo{
                     margin-left: 5.5rem;
+                }
+                .btn{
+                    transform: scale(1.2);
+                }
+                .fuerzaJoven__contenedorCard{
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .card--FA{
+                    width: 350px;
+                    transform: scale(0.9);
+                    height:max-content;                   
+                }
+                .fuerzaJoven__divImg{
+                    margin: 0;
+                }
+                .card__p--FA{
+                    font-size: 12px;
+                }
+                .p__art-ecaf{
+                    align-items: flex-start;
                 }
             }
         }

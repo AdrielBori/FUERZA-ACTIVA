@@ -32,23 +32,25 @@ height: max-content
 
 }
 .icons__menu{
-    width: 150px;
+    width: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 #burger__menu{
     display: none;
     width: 50px;
-    margin: auto;
+    margin: 20%;
     fill:#feca0a;
     cursor: pointer;
+    
 }
 #close__menu{
     
     display: none;
     width: 50px;
-    margin: auto;
+    margin: 20%;
     
     cursor: pointer;
 }
