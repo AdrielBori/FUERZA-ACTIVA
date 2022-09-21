@@ -1,5 +1,22 @@
 /* MEDIA PAGINA HOME */
-@media only screen and (min-width: 800px) and (max-width: 1100px) {
+@media (max-width:1600px){
+    html{
+        font-size: 9px;
+    }
+    
+    @media (max-width:1465px){
+        html{
+            font-size: 8px;
+        }
+        .nav_header ul{
+            width: 55%;
+        }
+    }
+}
+
+
+
+@media (max-width: 1250px) {
     
     #grText__home{
         width: 53%;
@@ -9,7 +26,152 @@
         font-size: 12px;
 
     }
-    #main__home{
+    #home__main{
         background-position:-150px;
+}
+.main__form{
+    flex-direction: column;
+    height: max-content;
+    align-items: flex-start;
+}
+.contenedor__footer{
+    justify-content: space-between;
+}
+    html{
+            font-size: 7px;
+        }
+        @media (max-width:1000px){
+            #home__main{
+                background-position:-250px;
+        }
+        .main__contacto{
+            display: flex;
+            flex-direction:column-reverse;
+            height: max-content;
+        }
+        .div__contacto{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .iframe{
+            width: 45rem;
+            height: 32rem;
+        }
+        .div__contacto form{
+            margin: 3%  15%;
+        }
+        .divFormContact{
+            padding-bottom: 80px;
+        }
+        @media (max-width:800px){
+            .div__logo-header{
+                border-bottom: 3px solid #feca0a;
+            }
+            #burger__menu{
+                display: block;
+                width: 30px;
+            }          
+            #close__menu{
+                width: 30px;
+            }
+            .header__nav{
+                display: none;
+            }  
+            .header__nav ul{
+                margin-left: 0;
+            }
+            .logo__footer{
+                display: none;
+            }
+            .contenedor__footer{
+                justify-content: center;
+            }
+            #home__grText{
+                width: 70%;
+            }
+            .nav__footer{
+                width: 80%;
+            }
+            @media (max-width:600px){
+                #home__main{
+                    background-position:-600px -30px;
+            }
+            @media  (min-width:100px) and (max-width:600px){
+                html{
+                    font-size: 7px;
+                }
+                #artEcaf{
+                    width: 100%;
+                    margin:0px 0px;
+                }
+                .container__slider{
+                    height: 400px;
+                }
+                .nav__footer{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 50% 50%;
+                    gap: 15px;
+                    margin: 20px;
+                }
+                .header__nav{
+                    position: absolute;
+                    top: 93.7px;
+                    height: 150vh;
+                    left: 0;
+                    z-index: 15000
+                    ;
+                }
+                .nav__list{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                .nav__list li{
+                    margin-bottom:80px ;
+                    display: block;
+                }
+                .nav__a{
+                    font-size: 2rem;
+                    width: 300px;
+                }
+                #close__menu{
+                    z-index: 16000;
+                }
+                #home__grText{
+                    margin-left:15px;
+                    
+                }
+                #logo{
+                    margin-left: 5.5rem;
+                }
+                .btn{
+                    transform: scale(1.2);
+                }
+                .fuerzaJoven__contenedorCard{
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .card--FA{
+                    width: 350px;
+                    transform: scale(0.9);
+                    height:max-content;                   
+                }
+                .fuerzaJoven__divImg{
+                    margin: 0;
+                }
+                .card__p--FA{
+                    font-size: 12px;
+                }
+                .p__art-ecaf{
+                    align-items: flex-start;
+                }
+            }
+        }
+        }
+    
 }
 }

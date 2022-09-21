@@ -1,6 +1,9 @@
 *{
-    color:black;
+    color:white;
     
+}
+p{
+    color: black;
 }
 .main__progrmas{
     width: 100vw;
@@ -85,7 +88,7 @@
         width: 80%;
         height: max-content;
         border: 1px solid white;
-        margin: auto;
+        margin: 10%;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -97,6 +100,8 @@
     }
         .titulo__ecaf{
             color: rgba(237, 101, 2, 1);
+            font-size: 5.5rem;
+            font-weight:900;
             align-self: flex-start;
             margin: 20px 10px ;
         }
@@ -104,7 +109,8 @@
             width: 80%;
             height: max-content;
             margin: 5px;
-            line-height: 1.5;
+            font-weight: 500;
+            font-size: 2.6rem;
             text-justify: auto;
             text-align: justify;
         }
@@ -123,6 +129,9 @@
     }
         .ul__art-ecaf li{
             margin: 3px 10px ;
+            font-size: 2.8rem;
+            font-weight: 500;
+            
             color: rgba(237, 101, 2, 1);
         }
 
@@ -134,65 +143,8 @@
     justify-content: center;
     align-items:center ;
 }
-
-.carrousel__programas{
-    position: relative;
-    width: 100%;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin:  50px 0;
-}
-.icon__flecha{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 40%;
-    margin: 10px;
-    border-radius: 100%;
-    background-color: rgba(237, 100, 2, 0.5) ; 
-    cursor:pointer;
-}
-.icon__flecha:hover{
-    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.747);
-    background-color:rgba(244, 129, 32, 1);
-}
-
-.icon__flecha img{
-    width: 100%;
-}
-.card{
-    width: 200px;
+.capacitaciones__div{
     height: max-content;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    margin: 15px;
-    flex-direction: column;
-    background-color: white;
-    }
-.img__card{
-    width: 100%;
-}
-.text__card{
-    width: 100%;
-}
-#izq{
-    left: 0;
-}
-#der{
-    right: 0;
-}
-#content__cards{
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: ease-in-out 0.65s;
-    
-    
 }
 .filtro__prog{
     width: 100%;
@@ -211,49 +163,150 @@
     padding:25px 0  ;
     color: white;
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 5.5rem;
 }
 .p__capacitaciones{
     width: 80%;
     margin: auto;
+    font-size: 2.6rem;
+    font-weight: 500;
     margin-bottom: 20px;
     text-align: justify;
     color: white;
 }
+/*CARROUSEL CAPACITACIONES  */
+.container__slider{
+    width: 100%;
+    
+    height: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    overflow: hidden;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.seminario{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px rgba(128, 128, 128, 0.603) ;
+}
+.img__card{
+    width: 100%;
+    height: 50%;
+}
+.text__card{
+    width: 100%;
+    margin: 3% 10% ;
+}
+.titulo__card{
+    width: 80%;
+    font-size: 2.4rem;
+    color: rgba(237, 101, 2, 1) ;
+    font-weight: bold;
+
+}
+.p__card{
+    width: 80%;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+#item-2:checked ~ .cards #selector-5,
+#item-1:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-1{
+    transform: translateX(-100%) scale(0.6);
+   
+    z-index: -1;
+}
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-80%) scale(0.8);
+   
+    z-index: 0;
+}
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+#item-5:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5{
+    transform: translateX(80%) scale(0.8);
+   
+    z-index: 0;
+}
+#item-5:checked ~ .cards #selector-2,
+#item-1:checked ~ .cards #selector-3,
+#item-2:checked ~ .cards #selector-4,
+#item-3:checked ~ .cards #selector-5,
+#item-4:checked ~ .cards #selector-1{
+    transform: translateX(100%) scale(0.6);
+   
+    z-index: -1;
+}
+
+
+
 
 /* FUERZA JOVEN */
 #fuerzaJoven{
     width: 100%;
-    height: 790px;
-    margin-bottom: 15px;
-}
-.card{
-    width: 200px;
     height: max-content;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    margin: 15px;
-    flex-direction: column;
-    background-color: white;
-    }
-.card__img{
-    width: 100%;
-}
-.card__text{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#content__cards{
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: ease-in-out 0.65s;
+    margin-bottom: 100px;
+    background-color: azure;
 }
 .programas__fuerzaJoven{
     display: flex;
@@ -262,40 +315,82 @@
     align-items: center;
     background-color: rgb(241, 241, 241);
 }
-.fuerzaJoven__contenedorCard{
-    width: 60%;
-    min-width: 580px;
+.fuerzaJoven__divText{
+width: 100%;
+height: 20% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.fuerzaJoven__divImg{
+    height: 80%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
 }
-.cardFA{
-    width:48%;
-    min-width: 290px;
-    border: none;
-    
+.card--FA{
+    width: 35%;
+    height: max-content;
+    background-color: white;
+    box-shadow: 0 0 25px rgb(194, 194, 194);
+    border-radius: 10px;
 }
-.card__img--FA{
-    height: 30%;
-    box-shadow: 5px 5px 5px rgb(240, 240, 240);
+.fuerzaJoven__contenedorCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-.card__titulo{
-    height: 40px;
-    font-size: 18px;
-    text-align: center;
-    width: 80%;
-    color: rgba(244, 129, 32, 1);
-    margin:10px 0 ;
-}
+
 .fuerzaJoven__titulo{
-    width: 60%;
-    color: rgba(244, 129, 32, 1);
-    margin:10px 0 ;
+    margin: 10px;
+    width: 80%;
+    height: max-content;
+    text-align:start;
+    color: rgba(237, 101, 2, 1);
+    font-size: 5.5rem;
+    font-weight: bold;
 }
 .fuerzaJoven__p{
-    width: 60%;
-    
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.fuerzaJoven__p span{
+    color: #F48120;
+    font-weight: bolder;
+}
+.card__img--FA{
+width: 100%;
+height: 40%;
+margin-bottom: 5px;
+}
+.card__text--FA{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+
+}
+.card__titulo--FA{
+font-size: 3.2rem;
+font-weight: bold;
+border-radius: 10%;
+color: #F48120;
+text-align: center;
+height: fit-content;
+margin: 10px;
+}
+.card__icon{
+
 }
 .card__p--FA{
     width: 80%;
-    margin-bottom: 15px;
+    height: 60%;
+    font-size: 2.4rem;
+    font-weight: 500;
 }

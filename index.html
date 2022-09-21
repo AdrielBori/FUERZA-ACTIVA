@@ -16,31 +16,37 @@
 </head>
 <body>
     <header class="header">
-        <div class="div__logo-header"><a href="index.html"><img src="src/image/logo.svg" alt="logo Ong Fuerza Activa" id="logo"></a></div>
-        <nav class="nav__header">
-            <ul class="lista__nav-header">
-                <li> <a href="index.html">Inicio</a> </li>
-                <li> <a href="src/page/quienessomos.html">Quienes somos</a> </li>
-                <li id="item__list"> <a href="">Nuestros Programas </a> 
+        <div class="div__logo-header">
+            <a href="index.html">
+                <img src="src/image/logo.svg" alt="logo Ong Fuerza Activa" id="logo">
+            </a> 
+            <div class="icons__menu">
+                <img src="src/image/menuburger.svg" alt="" id="burger__menu">
+                <img src="src/image/close_icon.svg" alt="" id="close__menu">
+            </div>
+        </div>
+        <nav class="header__nav" id="slide__menu">
+            <ul class="nav__list">
+                <li> <a href="index.html" class="nav__a">Inicio</a> </li>
+                <li> <a href="src/page/quienessomos.html" class="nav__a">Quienes somos</a> </li>
+                <li id="item__list"> <a href="src/page/programas.html" class="nav__a">Nuestros Programas </a> 
                     <ol class="sublist">
                         <a href="src/page/programas.html#ecaf">ECAF</a>
                         <a href="src/page/programas.html#capacitaciones">FUERZA JOVEN</a>
                         <a href="src/page/programas.html#fuerzaJoven">CAPACITACIONES</a>
                     </ol>
                 </li>
-                <li> <a href="src/page/contacto.html">Contactanos</a> </li>
+                <li> <a href="src/page/contacto.html" class="nav__a">Contacto</a> </li>
             </ul>
         </nav>
     </header>
-    <main id="main__home">
-    <div id="grText__home">
-        <h3 id="h3__grText-home">Sé parte del cambio</h3>
-        <h1 id="h1__grText-home">SUMA TU FUERZA</h1>
-        <P id="parraf__grText-home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate obcaecati fugiat maxime doloribus possimus? Temporibus velit amet blanditiis laboriosam et dignissimos neque molestiae est eligendi similique. Odit dolorum alias aut.</P>
-        <form action="POST" class="form__main">
-            <input type="email" name="email" id="email__form-main" class="input__form-main" placeholder="Ingrese su E-mail">
-            <button type="submit" class="input__form-main btn"> <span></span>Quiero ser voluntario</button>
-
+    <main id="home__main">
+        <div class="elipce"></div>
+    <div id="home__grText">
+        <h1 id="grText__h1">SUMA TU FUERZA</h1>
+        <P id="grText__parraf">Si queres formar parte de Fuerza activa como socio o voluntario completa el formulario y nos podemos en contacto con vos.</P>
+        <form action="POST" class="main__form">
+            <a  href="src/page/contacto.html"type="button" class="form__input btn"> <span></span>Quiero suma mi fuerza</a>
         </form>
     </div>
     </main>
@@ -59,13 +65,13 @@
                     </ul>
                     <ul class="lista__nav-footer">Nuestros Programas
                         <li>
-                            <a href="">ECAF</a>
+                            <a href="src/page/programas.html#ecaf" class="a__lista-footer">ECAF</a>
                         </li>
                         <li>
-                            <a href="" class="a__lista-footer">Fuerza Joven</a>
+                            <a href="src/page/programas.html#fuerzaJoven" class="a__lista-footer">Fuerza Joven</a>
                         </li>
                         <li>
-                            <a href="">Capacitaciones</a>
+                            <a href="src/page/programas.html#capacitaciones" class="a__lista-footer">Capacitaciones</a>
                         </li>
                     </ul>
                     <ul class="lista__nav-footer">Contactanos
@@ -88,5 +94,6 @@
                 </nav>
         </div>
     </footer>
+    <script src="src/script/index.js"></script>
 </body>
 </html>
