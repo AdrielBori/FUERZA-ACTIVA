@@ -76,6 +76,7 @@ html {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     margin-top: 20rem;
+    grid-gap: 3rem;
     z-index: 2;
 }
 .qs__title-3 {
@@ -167,6 +168,19 @@ html {
         height: 200rem;
     }
 }
+@media (max-width:800px) {
+ /*   .qs__txt-1 {
+        font-size: 1.5rem;
+        
+        margin: 3rem 10rem;
+    }*/
+    html {
+        font-size: 7px;
+    }
+    .rectangle__h3 {
+        font-size: 3rem;
+    } 
+}
 @media (max-width:700px) {
     .qs__title-2-container {
         display: grid;
@@ -197,7 +211,7 @@ html {
     }
     .qs__title-3 {
         grid-row: 1/2;
-        margin: 2rem;
+        margin: 3rem;
     }
     .qs__txt-3 {
         grid-row: 2/3;
@@ -205,7 +219,7 @@ html {
     }
     .qs__img-3 {
         grid-row: 3/4;
-        margin: 2rem;
+        margin: 3rem;
         
     }
 }
