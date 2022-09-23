@@ -70,35 +70,58 @@
             .div__logo-header{
                 border-bottom: 3px solid #feca0a;
             }
-            #burger__menu{
-                display: block;
-                width: 30px;
-            }          
-            #close__menu{
-                width: 30px;
-            }
+           
             .header__nav{
-                display: none;
+                position: absolute;
+                top: 93.7px;
+                width: 100%;
+                height: max-content;
+                
+                z-index: 15000
+                ;
             }  
             .header__nav ul{
+                width: 100%;
+                height: max-content;
                 margin-left: 0;
             }
-            .logo__footer{
-                display: none;
+            .nav__list li{
+                width: fit-content;
             }
+            #item__list a{
+                background-color:transparent;
+            }
+            .sublist{
+                background-color: transparent;
+                color: white;
+                width: 100%;
+            }
+            .sublist a{
+                color: white;
+            }
+
+          
             .contenedor__footer{
+                flex-direction: column;
                 justify-content: center;
+            }
+            .logo__footer{
+                width: 100%;
             }
             #home__grText{
                 width: 70%;
             }
             .nav__footer{
-                width: 80%;
+                width: 90%;
+                margin: 0;
             }
             @media (max-width:600px){
                 #home__main{
                     background-position:-600px -30px;
             }
+
+
+            /* MOVIL VERSION */
             @media  (min-width:100px) and (max-width:600px){
                 html{
                     font-size: 7px;
@@ -110,46 +133,108 @@
                 .container__slider{
                     height: 400px;
                 }
-                .nav__footer{
-                    display: grid;
-                    grid-template-columns: 50% 50%;
-                    grid-template-rows: 50% 50%;
-                    gap: 15px;
-                    margin: 20px;
+                .listF2{
+                   position: absolute;
+                   top:17%;
+                   left:3%;
                 }
-                .header__nav{
+                .listF4{
                     position: absolute;
-                    top: 93.7px;
-                    height: 150vh;
-                    left: 0;
-                    z-index: 15000
-                    ;
+                    top:42%;
+                    left:3%;
+                    display: inline-block;
                 }
-                .nav__list{
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    width: 100%;
+                .listF5{
+                    position: absolute;
+                    top:9%;
+                    right:3%;
+                    display: inline-block;
+
                 }
-                .nav__list li{
-                    margin-bottom:80px ;
-                    display: block;
+                .nav__footer{
+                    position: relative;
+                    height: 300px;
                 }
-                .nav__a{
-                    font-size: 2rem;
-                    width: 300px;
+                .listF1{
+                    position: absolute;
+                    top:3%;
+                    left:3%;
+                    display: inline-block;
                 }
-                #close__menu{
-                    z-index: 16000;
-                }
+                
+
+                /* MENU HEADER*/
+                        .header__nav{
+                            position: absolute;
+                            top: 93.7px;
+                            height: max-content;
+                            left: -100%;
+                            z-index: 15000
+                            ;
+                        }
+                        #burger__menu{
+                            display: block;
+                            width: 30px;
+                        }          
+                        #close__menu{
+                            width: 30px;
+                        }
+                        .div__logo-header{
+                            flex-direction: row-reverse;
+                            justify-content:flex-end;
+                        }
+                        .icons__menu{
+                            margin-right: 8%;
+                        }
+                        #logo{
+                            width: 148px;
+                            margin-left: 5.5rem;
+                        }
+                        .nav__list{
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
+                        .header__nav ul {
+                            align-items: center;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                        }
+                        .nav__list li{
+                            width: 100%;
+                            display: block;
+                            border: 1px solid white;
+                        }
+                        #item__list{
+                            
+                            height: max-content;
+                        }
+                        .sublist{
+                            position: static;
+                            display: block;
+                        }
+
+/* MAIN HOME */
                 #home__grText{
-                    margin-left:15px;
+                    margin-left:10px;
+                    width: 90%;
+                }
+                #grText__h1{
+                    font-size: 55px;
+                    width: 100%;
+                    height: fit-content;
                     
                 }
-                #logo{
-                    margin-left: 5.5rem;
+                #grText__parraf{
+                    margin:15% 0 ;
                 }
                 .btn{
-                    transform: scale(1.2);
+                    width: 100%;
+                    height: 55px;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 2;
                 }
                 .fuerzaJoven__contenedorCard{
                     flex-direction: column;
