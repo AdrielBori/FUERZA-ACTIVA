@@ -38,6 +38,7 @@ height: max-content
     justify-content: center;
     
 }
+
 #burger__menu{
     display: none;
     width: 55px;
@@ -61,7 +62,7 @@ height: max-content
     justify-content:flex-start;
     height: 8rem;
     border-top: 3px solid rgba(254, 202, 10, 1);
-    transition: all 1.5s;
+    transition: all 0.5s;
     transition-delay: ease 1s;
 }
 .header__nav ul{
@@ -247,7 +248,16 @@ font-weight: 400;
     font-weight: 400;
 }
 .a__lista-footer:hover{
-    color: rgba(255, 202, 5, 1);
+    color: #ffca05;
+    color: #ffd746;
 }
 
-
+.redes__img{
+    width: 20px;
+    
+filter: invert(86%) sepia(0%) saturate(6%) hue-rotate(166deg) brightness(98%) contrast(102%)
+}
+.redes__img:hover{
+    
+    filter: invert(88%) sepia(17%) saturate(6128%) hue-rotate(349deg) brightness(102%) contrast(109%);
+}

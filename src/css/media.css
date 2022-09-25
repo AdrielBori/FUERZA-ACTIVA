@@ -70,7 +70,8 @@
             .div__logo-header{
                 border-bottom: 3px solid #feca0a;
             }
-           
+            .container__slider{width: 90%;
+            overflow:hidden;}
             .header__nav{
                 position: absolute;
                 top: 93.7px;
@@ -126,6 +127,7 @@
                 html{
                     font-size: 7px;
                 }
+                .container__slider{width: 80%;}
                 #artEcaf{
                     width: 100%;
                     margin:0px 0px;
@@ -161,8 +163,20 @@
                     left:3%;
                     display: inline-block;
                 }
+                .fuerzaJoven__p{
+                    font-size: 2.2rem;
+                    width: 90%;
+                }
+                .fuerzaJoven__titulo{
+                    font-size: 5rem;
+                }
+                .p__capacitaciones{
+                    font-size: 2.2rem;
+                }
+                .titulo__capacitaciones{
+                    font-size: 5rem;
+                }
                 
-
                 /* MENU HEADER*/
                         .header__nav{
                             position: absolute;
@@ -240,20 +254,38 @@
                     flex-direction: column;
                     width: 100%;
                 }
+                .p__art-ecaf{
+                    font-size: 2.2rem;
+                }
+                .ul__art-ecaf li{
+                    font-size: 2.2rem;
+                }
                 .card--FA{
-                    width: 350px;
-                    transform: scale(0.9);
-                    height:max-content;                   
+                    width: 300px;
+                    
+                    height:fit-content;                   
                 }
                 .fuerzaJoven__divImg{
                     margin: 0;
                 }
                 .card__p--FA{
-                    font-size: 12px;
+                    font-size: 15px;
+                    height: max-content;
                 }
+                
                 .p__art-ecaf{
                     align-items: flex-start;
                 }
+                
+
+            /* COMNTACTO */    
+                .div__contacto form{
+                    width: 90%;
+                }
+                #ifreme{
+                    width: 70%;
+                }
+            
             }
         }
         }
