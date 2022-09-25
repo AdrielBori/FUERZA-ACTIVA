@@ -182,6 +182,12 @@ width: 100%;
     width: 30%;
     min-width: max-content;
 }
+.btn:hover{
+    color: black;
+
+transition: all 0.25s;
+box-shadow: 0px 0px 20px rgba(255, 202, 5, 1);
+}
 .email{
     width: 55%;
 }
@@ -217,6 +223,10 @@ margin-bottom: 5%;
 .logo-Footer{
     width: 25rem;
     margin-left: 11.5rem;
+    filter: invert(86%) sepia(0%) saturate(6%) hue-rotate(166deg) brightness(98%) contrast(102%)
+}
+.logo-Footer:hover{
+    filter: invert(88%) sepia(17%) saturate(6128%) hue-rotate(349deg) brightness(102%) contrast(109%);
 }
 .nav__footer{
 display: flex;
