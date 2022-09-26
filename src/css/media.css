@@ -261,8 +261,8 @@
                     font-size: 2.2rem;
                 }
                 .card--FA{
-                    width: 300px;
-                    
+                    width: 80%;
+                    margin: 10px;
                     height:fit-content;                   
                 }
                 .fuerzaJoven__divImg{

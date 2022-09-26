@@ -223,7 +223,7 @@ input[type=radio]{
 
 .seminario{
     overflow: hidden;
-    width: 100%;
+    width: 80%;
     height: 100%;
     border-radius: 15px;
     -o-object-fit: cover;
@@ -248,57 +248,70 @@ input[type=radio]{
 }
 .p__card{
     width: 80%;
+    margin-top: 10px;
     font-size: 2.4rem;
     font-weight: 500;
 }
-#item-2:checked ~ .cards #selector-5,
 #item-1:checked ~ .cards #selector-4,
-#item-5:checked ~ .cards #selector-3,
+#item-2:checked ~ .cards #selector-5,
+#item-3:checked ~ .cards #selector-6,
+#item-4:checked ~ .cards #selector-1,
+#item-5:checked ~ .cards #selector-2,
+#item-6:checked ~ .cards #selector-3{
+    transform: translate(0%) scale(0.4) ;
+    z-index: -3;
+}
+
+
+#item-1:checked ~ .cards #selector-5,
+#item-2:checked ~ .cards #selector-6,
+#item-3:checked ~ .cards #selector-1,
 #item-4:checked ~ .cards #selector-2,
-#item-3:checked ~ .cards #selector-1{
-    transform: translateX(-100%) scale(0.6);
-   
+#item-5:checked ~ .cards #selector-3,
+#item-6:checked ~ .cards #selector-4{
+    transform: translate(-80%) scale(0.6) ;
+    z-index: -2;
+}
+
+#item-1:checked ~ .cards #selector-6,
+#item-2:checked ~ .cards #selector-1,
+#item-3:checked ~ .cards #selector-2,
+#item-4:checked ~ .cards #selector-3,
+#item-5:checked ~ .cards #selector-4,
+#item-6:checked ~ .cards #selector-5{
+    transform: translate(-60%) scale(0.8) ;
     z-index: -1;
 }
 
-#item-2:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-5,
-#item-5:checked ~ .cards #selector-4,
-#item-4:checked ~ .cards #selector-3,
-#item-3:checked ~ .cards #selector-2{
-    transform: translateX(-80%) scale(0.8);
-   
-    z-index: 0;
-}
 #item-1:checked ~ .cards #selector-1,
 #item-2:checked ~ .cards #selector-2,
 #item-3:checked ~ .cards #selector-3,
 #item-4:checked ~ .cards #selector-4,
-#item-5:checked ~ .cards #selector-5{
-    transform: translateX(0) scale(1);
+#item-5:checked ~ .cards #selector-5,
+#item-6:checked ~ .cards #selector-6{
+    transform: translateX(0%);
+   
     z-index: 1;
 }
-
-
-#item-5:checked ~ .cards #selector-1,
 #item-1:checked ~ .cards #selector-2,
 #item-2:checked ~ .cards #selector-3,
 #item-3:checked ~ .cards #selector-4,
-#item-4:checked ~ .cards #selector-5{
-    transform: translateX(80%) scale(0.8);
-   
-    z-index: 0;
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-6,
+#item-6:checked ~ .cards #selector-1{
+    transform: translate(60%) scale(0.8) ;
+    z-index: -1;
+    
 }
-#item-5:checked ~ .cards #selector-2,
 #item-1:checked ~ .cards #selector-3,
 #item-2:checked ~ .cards #selector-4,
 #item-3:checked ~ .cards #selector-5,
-#item-4:checked ~ .cards #selector-1{
-    transform: translateX(100%) scale(0.6);
-   
-    z-index: -1;
+#item-4:checked ~ .cards #selector-6,
+#item-5:checked ~ .cards #selector-1,
+#item-6:checked ~ .cards #selector-2{
+    transform: translate(80%) scale(0.6) ;
+    z-index: -2;
 }
-
 
 
 
@@ -338,6 +351,7 @@ align-items: center;
     background-color: white;
     box-shadow: 0 0 25px rgb(194, 194, 194);
     border-radius: 10px;
+    overflow: hidden;
 }
 .fuerzaJoven__contenedorCard{
     display: flex;
