@@ -100,6 +100,10 @@
             .sublist a{
                 color: white;
             }
+            #heading__prog{
+                width: 80%;
+                font-size: 55PX;
+            }
 
           
             .contenedor__footer{
@@ -285,7 +289,15 @@
                 #ifreme{
                     width: 70%;
                 }
-            
+                /* PROGRAMAS */
+                #heading__prog{
+                    width: 100%;
+                }
+                .iconusers{
+                    width: 80%;
+                }
+
+
             }
         }
         }

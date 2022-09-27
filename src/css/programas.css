@@ -14,33 +14,28 @@ p{
     flex-wrap: wrap;
 }
 #heading__prog{
-    width: 350px;
+    width: max-content;
     height: 110px;
     font-size: 55px;
     font-weight:900;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 .img__programas{
-    background-image: url("../image/imgProgramas.png");
+    background-image:linear-gradient(to right,#F48120,  #ed6502,  #ed6502,  #ed6502,  #ed6502, #F48120);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 500px;
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.filter{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(254, 201, 10, 0.329);
-    position: absolute;
-    left: 0;
-    top: 0;
+.iconusers{
+    width: 50%;
 }
 .capacitaciones__programas{
     width: 100%;
@@ -100,7 +95,7 @@ p{
         
     }
         .titulo__ecaf{
-            color: rgba(237, 101, 2, 1);
+            color: #ed6502;
             font-size: 5.5rem;
             font-weight:900;
             align-self: flex-start;
