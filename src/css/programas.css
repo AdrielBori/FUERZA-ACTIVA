@@ -341,7 +341,7 @@ align-items: center;
     margin: 15px;
 }
 .card--FA{
-    width: 35%;
+    width: 45%;
     height: max-content;
     background-color: white;
     box-shadow: 0 0 25px rgb(194, 194, 194);
@@ -350,9 +350,9 @@ align-items: center;
 }
 .fuerzaJoven__contenedorCard{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -366,9 +366,10 @@ align-items: center;
     font-weight: bold;
 }
 .fuerzaJoven__p{
-    text-align: center;
+    text-align:start;
     font-size: 2.8rem;
     font-weight: 500;
+    width: 80%;
 }
 .fuerzaJoven__p span{
     color: #F48120;
@@ -387,7 +388,7 @@ margin-bottom: 5px;
 
 }
 .card__titulo--FA{
-font-size: 3.2rem;
+font-size: 3rem;
 font-weight: bold;
 border-radius: 10%;
 color: #F48120;
