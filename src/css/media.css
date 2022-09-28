@@ -3,6 +3,16 @@
     html{
         font-size: 9px;
     }
+    .divFormContact{
+        width: 50%;
+    }
+    .divMaps{
+        width: 50%;
+    }
+    .text__legal{
+        bottom: 16%;
+        right: 10%;
+    }
     
     @media (max-width:1465px){
         html{
@@ -11,13 +21,19 @@
         .nav_header ul{
             width: 55%;
         }
+        .text__legal{
+            bottom: 26%;
+            right: 10%;
+        }
+        
+        
     }
 }
 
 
 
 @media (max-width: 1250px) {
-    
+   
     #grText__home{
         width: 53%;
     }
@@ -46,15 +62,29 @@
         }
         .main__contacto{
             display: flex;
-            flex-direction:column-reverse;
-            height: max-content;
+            flex-direction:column;
+            height: 1500px;
+            padding-bottom: 100px;
+        }
+        .divMaps{
+            width: 80%;
+        }
+        .divMaps__div{
+            width: 80%;
         }
         .div__contacto{
-            width: 100%;
+            width: 80%;
             display: flex;
+            align-self:center;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+       
+        #iframe{
+            margin:0 ;
+            margin-left: 10%;
+            
         }
         .iframe{
             width: 45rem;
@@ -63,9 +93,7 @@
         .div__contacto form{
             margin: 3%  15%;
         }
-        .divFormContact{
-            padding-bottom: 80px;
-        }
+        
         @media (max-width:800px){
             .div__logo-header{
                 border-bottom: 3px solid #feca0a;
@@ -138,12 +166,26 @@
                 .container__slider{
                     width: 100%;
                 }
+                .text__legal{
+                    bottom: 36%;
+
+                }
+                
                 #artEcaf{
                     width: 100%;
                     margin:0px 0px;
                 }
                 .container__slider{
                     height: 400px;
+                }
+                .main__contacto{
+                    height: 1500px;
+                }
+                .text__dataBank{
+                    width: 60%;
+                }
+                .nav__socialIcon{
+                    width: 80%;
                 }
                 .listF2{
                    position: absolute;
@@ -277,6 +319,8 @@
                 }
                 .fuerzaJoven__divImg{
                     margin: 0;
+                    width: 80%;
+                    flex-direction: column;
                 }
                 .card__p--FA{
                     font-size: 15px;

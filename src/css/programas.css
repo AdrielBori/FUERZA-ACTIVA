@@ -395,6 +395,7 @@ margin-top: 5%;
 }
 .card--FA{
     max-width: 60rem;
+    width: 45%;
     height: 99.6rem;
     border-radius: 10px;
     display: flex;

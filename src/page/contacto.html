@@ -6,14 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="shortcut icon" href="../image/iconFA.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/contacto.css">
         <link rel="stylesheet" href="../css/media.css">
-
         <meta name="description" content="Fuerza Activa es una ONG con sede en San Rafael, Mendoza. Trabajamos en diversos programas y actividades. ¡Te invitamos a conocernos!">
-    <meta name="keywords" content="Fuerza Activa, Asociación civil Fuerza Activa, ONG, voluntariado, ECAF, niñez y adolescencia, capacitaciones, San Rafael, Fuerza Joven">
+        <meta name="keywords" content="Fuerza Activa, Asociación civil Fuerza Activa, ONG, voluntariado, ECAF, niñez y adolescencia, capacitaciones, San Rafael, Fuerza Joven">
 
     <!--Open Graph-->
     <meta property="og:type" content="website">
@@ -26,74 +25,99 @@
     </head>
     <body>
         <header class="header">
-            <div class="div__logo-header">
-                <a href="../../index.html">
-                    <img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo">
-                </a> 
-                <div class="icons__menu">
-                    <img src="../image/menuburger.svg" alt="" id="burger__menu">
-                    <img src="../image/close_icon.svg" alt="" id="close__menu">
+                <div class="div__logo-header"><!-- ENCABEZADO SUP BLANCO -->
+                        <a href="../../index.html">
+                                img src="../image/logo.svg" alt="logo Ong Fuerza Activa" id="logo">
+                        </a> 
+                        <div class="icons__menu"> <!-- ICONOS RESPONSIVE MOVIL -->
+                            <img src="../image/menuburger.svg" alt="" id="burger__menu">
+                            <img src="../image/close_icon.svg" alt="" id="close__menu">
+                        </div>
                 </div>
-            </div>
-            <nav class="header__nav" id="slide__menu">
-                <ul class="nav__list">
-                    <li> <a href="../../index.html" class="nav__a">Inicio</a> </li>
-                    <li> <a href="quienessomos.html" class="nav__a">Quienes somos</a> </li>
-                    <li id="item__list"> <a href="programas.html" class="nav__a">Nuestros Programas </a> 
-                        <ol class="sublist">
-                            <a href="programas.html#ecaf">ECAF</a>
-                            <a href="programas.html#capacitaciones">FUERZA JOVEN</a>
-                            <a href="programas.html#fuerzaJoven">CAPACITACIONES</a>
-                        </ol>
-                    </li>
-                    <li> <a href="contacto.html" class="nav__a">Contacto</a> </li>
-                </ul>
-            </nav>
+                <nav class="header__nav" id="slide__menu"> <!-- ENCABEZADO INF GRIS -->
+                        <ul class="nav__list">
+                            <li> 
+                                <a href="../../index.html" class="nav__a">Inicio</a> </li>
+                            <li> 
+                                <a href="quienessomos.html" class="nav__a">Quienes somos</a> </li>
+                            <li id="item__list"> <a href="programas.html" class="nav__a">Nuestros Programas </a> 
+                                <ol class="sublist"> <!-- SUB MENU DESPLEGABLE -->
+                                    <a href="programas.html#ecaf">ECAF</a>
+                                    <a href="programas.html#capacitaciones">FUERZA JOVEN</a>
+                                    <a href="programas.html#fuerzaJoven">CAPACITACIONES</a>
+                                </ol>
+                            </li>
+                            <li> <a href="contacto.html" class="nav__a">Contacto</a> </li>
+                        </ul>
+                </nav>
         </header>
     <main class="main__contacto">
-    <div class="div__contacto divFormContact">
-        <form action="" method="POST" >
-            <label for="nombre" class="label__form">NOMBRE</label>
-            <input type="text" id="nombre" name="name"  class="form__item-contacto">
-            <label for="email" class="label__form">email</label>
-            <input type="email" id="email" name="mail"  class="form__item-contacto">
-            <label for="mensaje" class="label__form" >mensaje</label>
-            <textarea name="messaje" id="mensaje" cols="30" rows="10" class="form__item-contacto">
-            </textarea>
-            <input type="submit" class="submit" value="Eviar">
+        <div class="div__contacto divFormContact"><!-- DERECHA FORMULARIO -->
+            <form action="" method="POST" >
+                <h1 id="h1__contacto">CONTACTO</h1>
+                <label for="nombre" class="label__form">NOMBRE</label>
+                    <input type="text" id="nombre" name="name"  class="form__item-contacto">
+                <label for="email" class="label__form">email</label>
+                    <input type="email" id="email" name="mail"  class="form__item-contacto">
+                <label for="mensaje" class="label__form" >mensaje</label>
+                    <textarea name="messaje" id="mensaje" cols="30" rows="10" class="form__item-contacto itemTextArea">
+                </textarea>
+                <input type="submit" class="submit" value="Eviar">
         </form>
-        <p class="parraf__contacto">
-            <span>INFORMACIÓN LEGAL – BANCARIA</span> <br> Cuenta bancaria
-            FUERZA ACTIVA ASOCIACION CIVIL          
-            CUIT: 30717099814
-            Banco: Santander
-            Cuenta: CC$ 262-003086/7
-            CBU: 0720262120000000308672
-            Alias: FUERZA.ACTIVA.MDZ
-        </p>
+    </div>
+    <div class="div__contacto divMaps "> <!-- IZQUIERDA MAPA Y TEXTO -->
+        <div class="div__frame"> <!-- MAPA -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.398600942236!2d-68.32975818540355!3d-34.619366080455436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907f8ce0542e1%3A0x7492fa15524f7c22!2sLas%20Heras%20189%2C%20M5600%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1662560470504!5m2!1ses-419!2sar" 
+                width="600" height="450" style="border:0;" allowfullscreen="" id="iframe" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>    
+        </div>
         
-    </div>
-    <div class="div__contacto ">
-        <h1 id="h1__contacto">CONTACTANOS</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.398600942236!2d-68.32975818540355!3d-34.619366080455436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907f8ce0542e1%3A0x7492fa15524f7c22!2sLas%20Heras%20189%2C%20M5600%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1662560470504!5m2!1ses-419!2sar" 
-        width="600" height="450" style="border:0;" allowfullscreen="" id="iframe" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="parraf__contacto">
-        <span>Nos podes ubicar en:</span> <br> Las Heras 189, San Rafael, Mendoza, Argentina <br> fuerzaactivaasociacioncivil@gmail.com
-        </p>
-        <p class="parraf__contacto">
-            
-            Abogado
-David Barroso
-2604654156
-<br>
-Contadora
-Valeria Pavlovic
-2604414547
-
-
-            
-        </p>
-    </div>
+        <div class="divMaps__div">
+            <p class="text__location"> <!-- TEXT UBICACION -->
+                <span>Nos podes ubicar en:</span> <br> Las Heras 189, San Rafael, Mendoza, Argentina 
+                <br> fuerzaactivaasociacioncivil@gmail.com
+            </p>
+        </div>
+        <div class="divMaps__div">
+            <div class="nav__socialIcon"> <!-- ICONOS SOCIALES -->
+                <a href=""  class="redes__nav-contact">
+                    <img src="../image/face.svg" alt="" class="redes__img--Contact">
+                </a>
+                <a href="" class="redes__nav-contact">
+                    <img src="../image/insta.svg" alt="" class="redes__img--Contact">
+                </a>
+                <a href="" class="redes__nav-contact">
+                    <img src="../image/iconEmail.svg" alt="" class="redes__img--Contact">
+                </a>
+            </div>
+        </div>
+       
+            <div class="divMaps__div ">
+                <p class="text__dataBank"><!-- DATOS BANCARIOS -->
+                    <span>INFORMACIÓN LEGAL – BANCARIA</span> 
+                    <br> Cuenta bancaria <br>
+                    FUERZA ACTIVA ASOCIACION CIVIL    <br>     
+                    CUIT: 30717099814 <br> <br>
+                    Banco: Santander <br>
+                    Cuenta: CC$ 262-003086/7 <br>
+                    CBU: 0720262120000000308672 <br> 
+                    Alias: FUERZA.ACTIVA.MDZ
+                </p>
+                <p class="text__legal"><!-- DATOS LEGALES -->
+                    <span>Abogado</span>
+                    <br>
+                    David Barroso
+                    2604654156
+                    <br>
+                    <br>
+                    <span>Contadora</span>
+                    <br>
+                    Valeria Pavlovic
+                    2604414547
+                </p>
+            </div>
+        </div>
     </main>
     <footer class="footer" >
         <div class="contenedor__footer">
