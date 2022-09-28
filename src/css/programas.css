@@ -31,11 +31,12 @@ p{
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
 }
-.iconusers{
-    width: 50%;
+.iconglobostxt{
+    width: 80%;
+    height: 200px;
 }
 .capacitaciones__programas{
     width: 100%;
@@ -99,7 +100,8 @@ p{
             font-size: 5.5rem;
             font-weight:900;
             align-self: flex-start;
-            margin: 20px 10px ;
+            margin: 10px 10%  ;
+            
         }
         .p__art-ecaf{
             width: 80%;
@@ -109,6 +111,7 @@ p{
             font-size: 2.6rem;
             text-justify: auto;
             text-align: justify;
+            color:#4a4a4a;
         }
             .p__art-ecaf span{
             color: rgba(237, 101, 2, 1);
@@ -118,6 +121,7 @@ p{
     .ul__art-ecaf{
         margin: 20px 10px ;
         width: 80%;
+        
         height: max-content;
         border-radius: 10px;
         
@@ -141,6 +145,10 @@ p{
 }
 .capacitaciones__div{
     height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .filtro__prog{
     width: 100%;
@@ -154,7 +162,7 @@ p{
     bottom: 0;
 }
 .titulo__capacitaciones{
-    width: 80%;
+    width: 65%;
     margin: auto;
     padding:25px 0  ;
     color: white;
@@ -162,24 +170,23 @@ p{
     font-size: 5.5rem;
 }
 .p__capacitaciones{
-    width: 80%;
+    width: 65%;
     margin: auto;
     font-size: 2.6rem;
     font-weight: 500;
     margin-bottom: 20px;
     text-align: justify;
     color: white;
+
 }
 /*CARROUSEL CAPACITACIONES  */
 .container__slider{
     width: 100%;
-    
     height: 700px;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    position: relative;
     overflow: hidden;
 }
 
@@ -201,10 +208,13 @@ input[type=radio]{
 .cards{
     position: relative;
     width: 100%;
+    margin: auto;
     height: 100%;
+    transform: scale(0.9);
 }
 
 .card{
+
     position: absolute;
     width: 80%;
     height: 100%;
@@ -220,6 +230,7 @@ input[type=radio]{
     overflow: hidden;
     width: 80%;
     height: 100%;
+    margin: auto;
     border-radius: 15px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -247,6 +258,17 @@ input[type=radio]{
     font-size: 2.4rem;
     font-weight: 500;
 }
+.flechas{
+    position:absolute;
+    top:45%;
+    z-index: 5;
+}
+#flechaizq{
+    left: 5%;
+}
+#flechader{
+    right: 5%;
+}
 #item-1:checked ~ .cards #selector-4,
 #item-2:checked ~ .cards #selector-5,
 #item-3:checked ~ .cards #selector-6,
@@ -255,6 +277,7 @@ input[type=radio]{
 #item-6:checked ~ .cards #selector-3{
     transform: translate(0%) scale(0.4) ;
     z-index: -3;
+    display: none;
 }
 
 
@@ -266,6 +289,7 @@ input[type=radio]{
 #item-6:checked ~ .cards #selector-4{
     transform: translate(-80%) scale(0.6) ;
     z-index: -2;
+    display: none;
 }
 
 #item-1:checked ~ .cards #selector-6,
@@ -274,8 +298,9 @@ input[type=radio]{
 #item-4:checked ~ .cards #selector-3,
 #item-5:checked ~ .cards #selector-4,
 #item-6:checked ~ .cards #selector-5{
-    transform: translate(-60%) scale(0.8) ;
+    transform: translate(-70%) scale(0.8) ;
     z-index: -1;
+    display: block;
 }
 
 #item-1:checked ~ .cards #selector-1,
@@ -287,6 +312,7 @@ input[type=radio]{
     transform: translateX(0%);
    
     z-index: 1;
+    display: block;
 }
 #item-1:checked ~ .cards #selector-2,
 #item-2:checked ~ .cards #selector-3,
@@ -294,8 +320,9 @@ input[type=radio]{
 #item-4:checked ~ .cards #selector-5,
 #item-5:checked ~ .cards #selector-6,
 #item-6:checked ~ .cards #selector-1{
-    transform: translate(60%) scale(0.8) ;
+    transform: translate(70%) scale(0.8) ;
     z-index: -1;
+    display: block;
     
 }
 #item-1:checked ~ .cards #selector-3,
@@ -306,6 +333,7 @@ input[type=radio]{
 #item-6:checked ~ .cards #selector-2{
     transform: translate(80%) scale(0.6) ;
     z-index: -2;
+    display: none;
 }
 
 
@@ -315,7 +343,7 @@ input[type=radio]{
     width: 100%;
     height: max-content;
     margin-bottom: 100px;
-    background-color: azure;
+    background-color: white;
 }
 .programas__fuerzaJoven{
     display: flex;
@@ -331,34 +359,22 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-top: 5%;
 }
 .fuerzaJoven__divImg{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 15px;
-}
-.card--FA{
-    width: 45%;
     height: max-content;
-    background-color: white;
-    box-shadow: 0 0 25px rgb(194, 194, 194);
-    border-radius: 10px;
-    overflow: hidden;
-}
-.fuerzaJoven__contenedorCard{
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 100%;
+    margin: 5% 0;
 }
+
+
 
 .fuerzaJoven__titulo{
     margin: 10px;
-    width: 80%;
+    width: 65%;
     height: max-content;
     text-align:start;
     color: rgba(237, 101, 2, 1);
@@ -369,39 +385,50 @@ align-items: center;
     text-align:start;
     font-size: 2.8rem;
     font-weight: 500;
-    width: 80%;
+    color:#4a4a4a;
+    width: 65%;
 }
 .fuerzaJoven__p span{
     color: #F48120;
     font-weight: bolder;
+    
 }
-.card__img--FA{
-width: 100%;
-height: 40%;
-margin-bottom: 5px;
-}
-.card__text--FA{
+.card--FA{
+    max-width: 60rem;
+    height: 99.6rem;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 30px gray;
+    overflow: hidden;
+}
 
+.img__card--FA{
+    width: 100%;
+    max-height: 38.2rem;
 }
-.card__titulo--FA{
-font-size: 3rem;
-font-weight: bold;
-border-radius: 10%;
-color: #F48120;
-text-align: center;
-height: fit-content;
-margin: 10px;
+.text__card--FA{
+    width: 100%;
+    height: 61rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
 }
-.card__icon{
-
+.titulo__card--FA{
+    color:orangered;
+    font-size: 3.2rem;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+    text-justify: distribute;
+    
 }
-.card__p--FA{
+.p__card--FA{
     width: 80%;
-    height: 60%;
-    font-size: 2.4rem;
-    font-weight: 500;
+    font-size: 2.2rem;
+    color:#4a4a4a;
 }

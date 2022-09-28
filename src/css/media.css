@@ -118,7 +118,7 @@
                 width: 70%;
             }
             .nav__footer{
-                width: 90%;
+                width: 100%;
                 margin: 0;
             }
             @media (max-width:600px){
@@ -132,7 +132,12 @@
                 html{
                     font-size: 7px;
                 }
-                .container__slider{width: 80%;}
+                .redes__nav{
+                    display: none;
+                }
+                .container__slider{
+                    width: 100%;
+                }
                 #artEcaf{
                     width: 100%;
                     margin:0px 0px;
