@@ -249,61 +249,7 @@ html {
 .secMision--rev{
     flex-direction: row-reverse;
 }
-@media (max-width:2000px) {
-    .qs__title-2, .qs__title-3, .rectangle__title, .qs__title{
-        font-size: 4rem;
-    }
-    .qs__txt-2, .qs__txt-3,.rectangle__p{
-        font-size: 2rem;
-    }
-}
-@media (min-width:1800px) {
-    .qs__vector-naranja {
-        height: 200rem;
-    }
-}
-@media (max-width:1000px) {
-    .qs__vector-naranja {
-        height: 200rem;
-    }
-}
-@media (max-width:900px) {
-    .qs__img-3 {
-        max-width: 60rem;
-    }
-    .qs__txt-3 {
-        margin-top: 2rem;
-        margin: 0;
-    }
-    .qs__title-3 {
-        margin: 0;
-    }
-}
-@media (max-width:850px) {
- /*   .qs__txt-1 {
-        font-size: 1.5rem;
-        
-        margin: 3rem 10rem;
-    }*/
-    .qs__img-3 {
-        max-width: 60rem;
-    }
-    html {
-        font-size: 7px;
-    }
-    .rectangle__h3 {
-        font-size: 3rem;
-    }
-}
 
-@media (max-width:850px) {
-    .qs__title-2-container {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        grid-gap: 1rem;
-        
-    }
     .qs__title-3-container {
         display: grid;
         grid-template-columns: auto;
@@ -353,7 +299,7 @@ html {
         margin: 2rem;
         justify-self: center;
     }
-}
+
 
 
 /* CSS NUEVO */
@@ -412,7 +358,8 @@ main section{
 .qs__txt-1{
     font-size: 3.9rem;
     font-weight: 400;
-    margin: 20% 5%;
+    margin: 5% 5%;
+    margin-bottom: 20% ;
 
 }
 .qs__img{
