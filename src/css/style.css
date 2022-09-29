@@ -82,6 +82,11 @@ height: 16.8rem;
     text-transform: uppercase;
     position: relative
 }
+.nav__list li:hover{
+    background-color: rgba(92, 92, 92, 1);
+    color:rgba(255, 202, 5, 1);
+    }
+    
 .nav__a{
     width: max-content;
     font-size: 1.8rem;
@@ -91,6 +96,10 @@ height: 16.8rem;
 .nav__a:hover{
     color:rgba(255, 202, 5, 1);
 }
+#item__list:hover ol{
+    display: flex;
+    width: 100%;
+    }
 .sublist{
     width: 252px;
     height: max-content;
@@ -113,19 +122,12 @@ height: 16.8rem;
     background-color:rgba(254, 202, 10, 1); 
     color: black;
 }
-.nav__list li:hover{
-background-color: rgba(92, 92, 92, 1);
-color:rgba(255, 202, 5, 1);
-}
-#item__list:hover ol{
-display: block;
-width: 100%;
-}
+
 
 .redes__nav{
     width: 150px;
     height:100%;
-    margin-right: 7%;
+    margin-right: 4%;
     display: flex;
     justify-content:space-around;
     align-items: center;

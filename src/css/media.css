@@ -98,6 +98,13 @@
             .div__logo-header{
                 border-bottom: 3px solid #feca0a;
             }
+            .fuerzaJoven__divImg{
+                flex-direction: column;
+            }
+            .card--FA{
+                width: 100%;
+                margin-bottom: 10px;
+            }
             .container__slider{width: 90%;
             overflow:hidden;}
             .header__nav{
@@ -208,6 +215,7 @@
                 .nav__footer{
                     position: relative;
                     height: 300px;
+                    width: 82%;
                 }
                 .listF1{
                     position: absolute;
