@@ -14,6 +14,7 @@
         right: 10%;
     }
     
+    
     @media (max-width:1465px){
         html{
             font-size: 8px;
@@ -137,7 +138,7 @@
             }
             #heading__prog{
                 width: 80%;
-                font-size: 55PX;
+                font-size: 50PX;
             }
 
           
@@ -207,16 +208,18 @@
                 }
                 .listF5{
                     position: absolute;
-                    top:9%;
+                    top:3%;
                     right:3%;
                     display: inline-block;
-
+                    width: 60%;
+                
                 }
                 .nav__footer{
                     position: relative;
                     height: 300px;
-                    width: 82%;
+                    width: 100%;
                 }
+                
                 .listF1{
                     position: absolute;
                     top:3%;
@@ -229,14 +232,26 @@
                 }
                 .fuerzaJoven__titulo{
                     font-size: 5rem;
+                    width: 100%;
                 }
                 .p__capacitaciones{
                     font-size: 2.2rem;
+                    width: 80%;
                 }
+                .flechas {
+                    transform: scale(0.8);
+                }                  
                 .titulo__capacitaciones{
                     font-size: 5rem;
+                    width: 80%;
+                    margin: 0;
                 }
-                
+                .p__card--FA{
+                    width: 95%;
+                }
+                .lista__nav-footer li{
+                    font-size: 11px;
+                }
                 /* MENU HEADER*/
                         .header__nav{
                             position: absolute;
@@ -288,17 +303,39 @@
                             position: static;
                             display: block;
                         }
-
+                        .div__contacto{
+                            width: 95%;}
 /* MAIN HOME */
                 #home__grText{
                     margin-left:10px;
                     width: 90%;
                 }
+                #iframe{
+                    margin-left: 0;
+                }
                 #grText__h1{
                     font-size: 55px;
                     width: 100%;
                     height: fit-content;
-                    
+                }
+                .qs__txt-1{
+                    margin: 10%;
+                }
+                .qs__img-2{
+                    width: 80%;
+                    margin: 0;
+                }
+                .qs__title-3{
+                    width: 80%;
+                }
+                .qs__txt-3{
+                    width: 90%;
+                    height: max-content;
+                    margin: 0;
+                }
+                .qs__img-3{
+                    margin: 0;
+                    width: 80%;
                 }
                 #grText__parraf{
                     margin:15% 0 ;
@@ -321,9 +358,13 @@
                     font-size: 2.2rem;
                 }
                 .card--FA{
-                    width: 80%;
+                    width: 105%;
                     margin: 10px;
                     height:fit-content;                   
+                }
+                .titulo__card--FA{
+                    font-size: 2.9rem;
+                    margin-bottom: 5px;
                 }
                 .fuerzaJoven__divImg{
                     margin: 0;
