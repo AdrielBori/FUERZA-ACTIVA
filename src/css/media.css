@@ -46,6 +46,10 @@
     #home__main{
         background-position:-150px;
 }
+.text__legal {
+    bottom: 38%;
+    
+  }
 .main__form{
     flex-direction: column;
     height: max-content;
@@ -66,6 +70,9 @@
             flex-direction:column;
             height: 1500px;
             padding-bottom: 100px;
+        }
+        .text__legal {
+            bottom: 32%;
         }
         .divMaps{
             width: 80%;
@@ -116,6 +123,10 @@
             .card--FA{
                 width: 100%;
                 margin-bottom: 10px;
+            }
+            .text__legal {
+                bottom: 36%;
+                right: 0%;
             }
             .container__slider{width: 90%;
             overflow:hidden;}
@@ -186,7 +197,7 @@
                     width: 100%;
                 }
                 .text__legal{
-                    bottom: 36%;
+                   bottom:37%;
 
                 }
                 .qs__bg-naranja{
@@ -230,7 +241,7 @@
                 .listF5{
                     position: absolute;
                     top:3%;
-                    right:3%;
+                    right:0%;
                     display: inline-block;
                     width: 60%;
                 
@@ -253,7 +264,7 @@
                 }
                 .fuerzaJoven__titulo{
                     font-size: 5rem;
-                    width: 100%;
+                    width: 90%;
                 }
                 .p__capacitaciones{
                     font-size: 2.2rem;
@@ -272,6 +283,13 @@
                 }
                 .lista__nav-footer li{
                     font-size: 11px;
+                }
+                .logo-Footer{
+                    margin-left: 0;
+                }
+                .lista__nav-footer li{
+                    margin-left: 0;
+                    padding:  0;
                 }
                 /* MENU HEADER*/
                         .header__nav{
