@@ -190,7 +190,7 @@
 
                 }
                 .qs__bg-naranja{
-                    bottom: 45%;
+                    bottom: 10%;
                     
                 }
                 .qs__txt-1{
@@ -418,7 +418,9 @@
                 .iconusers{
                     width: 80%;
                 }
-
+                .secc__contenido--QS{
+                    margin-top: 50%;
+                }
 
             }
         }

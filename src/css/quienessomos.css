@@ -313,7 +313,7 @@ html {
     width: 100%;
     height: max-content;
     z-index: 10000;
-    padding: 180px 0;
+    
 }
 main section{
     width: 100%;
@@ -321,35 +321,33 @@ main section{
 }
 .qs__bg-gris{
     width: 100%;
-    height: max-content;
+    height: 30%;
     position: absolute;
-    top: 20%;
+    top: -15%;
     z-index: -50;
+    background-image: url("../image/Vector.png");
+    background-size: cover;
 }
-.qs__bg-gris img{
-    width: 100%;
-    height: 100%;
-}
+
 .qs__bg-gris-1{
     z-index: -25;
     width: 100%;
-    height: max-content;
+    height: 72%;
     position: absolute;
-    bottom: 33%;
+    bottom: -5%;
     z-index: -50;
+    background-image: url("../image/Vectorgris.png");
+    background-size: cover;
 }
-.qs__bg-gris-1 img{
-    width: 100%;
-    height: 100%;
-}
-
 .qs__bg-naranja{
+    background-image: url("../image/secProgrmas.png");
+    background-size: cover;
     z-index: -40;
     z-index: -25;
     width: 100%;
-    height: 1800px;
+    height: 100%;
     position: absolute;
-    bottom: 20%;
+    bottom: 12%;
 }
 .qs__bg-naranja img{
     width: 100%;
